@@ -28,3 +28,5 @@ then any changes in file is now refletin at both memory and browser url ping
 (dockerapp) D:\codeexplo\docker\pythonApp>for /f %i in ('docker ps -q') do docker stop %i  
 to stop all container at once
 
+(dockerapp) D:\codeexplo\docker\pythonApp>docker run -d -p 8001:5000 -v app_code:/app -v app_logs:/logs - name python-cont-6 pythonflaskapp
+for named volume
