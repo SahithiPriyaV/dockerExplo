@@ -19,3 +19,12 @@ Python:
 (dockerapp) D:\codeexplo\docker\pythonApp>docker ps --all    
 (dockerapp) D:\codeexplo\docker\pythonApp>ddocker stop 2d1bbde9f0e0      
 (dockerapp) D:\codeexplo\docker\pythonApp>docker container prune
+
+Case issue
+After making app mount i forgot dbig true in flask so container even changes in detectin container memory not detcting changing in browser, as last service running on flask app without debug 
+so stoped and start container
+then any changes in file is now refletin at both memory and browser url ping
+
+(dockerapp) D:\codeexplo\docker\pythonApp>for /f %i in ('docker ps -q') do docker stop %i  
+to stop all container at once
+

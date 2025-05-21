@@ -1,0 +1,22 @@
+2025-05-21 14:20:23,284 - INFO - HOSTNAME=440421994f31 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.4:5000
+2025-05-21 14:20:23,285 - INFO - HOSTNAME=440421994f31 - [33mPress CTRL+C to quit[0m
+2025-05-21 14:21:48,718 - INFO - HOSTNAME=c91d55e3957f - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.5:5000
+2025-05-21 14:21:48,719 - INFO - HOSTNAME=c91d55e3957f - [33mPress CTRL+C to quit[0m
+2025-05-21 14:23:13,156 - INFO - HOSTNAME=440421994f31 - 172.17.0.1 - - [21/May/2025 14:23:13] "GET / HTTP/1.1" 200 -
+2025-05-21 14:23:13,272 - INFO - HOSTNAME=440421994f31 - 172.17.0.1 - - [21/May/2025 14:23:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-21 14:23:20,696 - INFO - HOSTNAME=c91d55e3957f - 172.17.0.1 - - [21/May/2025 14:23:20] "GET / HTTP/1.1" 200 -
+2025-05-21 14:23:20,739 - INFO - HOSTNAME=c91d55e3957f - 172.17.0.1 - - [21/May/2025 14:23:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-21 14:58:06,522 - INFO - HOSTNAME=c9df9e61ab97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.3:5000
+2025-05-21 14:58:06,523 - INFO - HOSTNAME=c9df9e61ab97 - [33mPress CTRL+C to quit[0m
+2025-05-21 14:58:06,525 - INFO - HOSTNAME=c9df9e61ab97 -  * Restarting with stat
+2025-05-21 14:58:06,813 - WARNING - HOSTNAME=c9df9e61ab97 -  * Debugger is active!
+2025-05-21 14:58:06,815 - INFO - HOSTNAME=c9df9e61ab97 -  * Debugger PIN: 928-553-413
