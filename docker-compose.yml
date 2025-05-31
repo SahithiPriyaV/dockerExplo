@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database (from sqlengine folder)
+  postgres-db:
+    build:
+      context: ./sqlengine
+      dockerfile: Dockerfile
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Flask API Application
+  flask-app:
+    build:
+      context: ./pythonApp
+      dockerfile: Dockerfile
+    container_name: flask-api
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres-db
+      DB_PORT: 5432
+      DB_NAME: postgres
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    volumes:
+      - ./pythonApp/host_logs:/app/host_logs
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

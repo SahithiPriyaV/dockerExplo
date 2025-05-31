@@ -30,3 +30,27 @@ to stop all container at once
 
 (dockerapp) D:\codeexplo\docker\pythonApp>docker run -d -p 8001:5000 -v app_code:/app -v app_logs:/logs - name python-cont-6 pythonflaskapp
 for named volume
+
+
+to build docker images from docker compose yml
+
+D:\codeexplo\docker>docker compose -f docker-compose.yml build
+
+
+to run docker containers
+D:\codeexplo\docker>docker compose up -d
+
+
+to see docker logs
+
+D:\codeexplo\docker>docker compose logs -f
+
+
+ping not found
+root@9d029bc8aa21:/app# apt-get update && apt-get install -y iputils-ping
+
+D:\codeexplo\docker>docker network inspect bridge
+t create container in different network
+D:\codeexplo\docker>docker network create mybridge
+D:\codeexplo\docker>docker run -d --network mybridge -p 8000:5000 --name python-cont-1 pythonflaskapp 
+D:\codeexplo\docker>docker network connect --alias postgres-db bridge postgres-db

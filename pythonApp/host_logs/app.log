@@ -20,3 +20,12 @@
 2025-05-21 14:58:06,525 - INFO - HOSTNAME=c9df9e61ab97 -  * Restarting with stat
 2025-05-21 14:58:06,813 - WARNING - HOSTNAME=c9df9e61ab97 -  * Debugger is active!
 2025-05-21 14:58:06,815 - INFO - HOSTNAME=c9df9e61ab97 -  * Debugger PIN: 928-553-413
+2025-05-31 05:50:58,146 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+2025-05-31 05:50:58,147 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-31 05:50:58,151 - werkzeug - INFO -  * Restarting with stat
+2025-05-31 05:50:58,631 - werkzeug - WARNING -  * Debugger is active!
+2025-05-31 05:50:58,637 - werkzeug - INFO -  * Debugger PIN: 936-639-224
+2025-05-31 06:10:21,523 - werkzeug - INFO - 172.18.0.1 - - [31/May/2025 06:10:21] "GET /users HTTP/1.1" 200 -
